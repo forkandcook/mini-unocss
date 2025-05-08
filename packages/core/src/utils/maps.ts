@@ -1,7 +1,7 @@
 export const directionMap: Record<string, string> = {
-  'l': '-left',
-  'r': '-right',
-  't': '-top',
-  'b': '-bottom',
-  '': '',
+	l: '-left',
+	r: '-right',
+	t: '-top',
+	b: '-bottom',
+	'': '',
 }

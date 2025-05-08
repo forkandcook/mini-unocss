@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Foo from './components/Foo.vue'
 import Bar from './components/Bar.vue'
+import Foo from './components/Foo.vue'
 </script>
 
 <template>

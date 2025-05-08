@@ -3,5 +3,5 @@
 export type MiniUnoCssRule = [RegExp, (match: string[]) => string | undefined]
 
 export interface MiniUnoCssConfig {
-  rules: MiniUnoCssRule[]
+	rules: MiniUnoCssRule[]
 }
