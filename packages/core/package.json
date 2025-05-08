@@ -1,0 +1,20 @@
+{
+  "name": "@mini-unocss/core",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown -w"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.mts"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ]
+}
