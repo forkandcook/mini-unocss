@@ -1,0 +1,49 @@
+{
+  "name": "unocss",
+  "version": "0.1.0-beta.2",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/antfu/unocss#readme",
+  "bugs": {
+    "url": "https://github.com/antfu/unocss/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antfu/unocss.git"
+  },
+  "funding": "https://github.com/sponsors/antfu",
+  "license": "MIT",
+  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./vite": {
+      "require": "./dist/vite.js",
+      "import": "./dist/vite.mjs"
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch src",
+    "prepublishOnly": "nr build"
+  },
+  "dependencies": {
+    "@unocss/core": "workspace:*",
+    "@unocss/preset-attributify": "workspace:*",
+    "@unocss/preset-uno": "workspace:*",
+    "@unocss/vite": "workspace:*"
+  },
+  "devDependencies": {
+    "nanoevents": "^6.0.2"
+  }
+}

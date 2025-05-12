@@ -1,4 +1,9 @@
-node_modules
 .DS_Store
-dist
 *.local
+*.log
+bench/source/gen*.js
+coverage
+dist
+dist-ssr
+node_modules
+result.json

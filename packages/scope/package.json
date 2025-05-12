@@ -1,0 +1,13 @@
+{
+  "name": "@unocss/scope",
+  "module": "./index.mjs",
+  "main": "./index.cjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "version": "0.1.0-beta.2"
+}

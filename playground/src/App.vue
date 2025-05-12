@@ -1,9 +1,12 @@
-<script setup lang="ts">
-import Bar from './components/Bar.vue'
-import Foo from './components/Foo.vue'
-</script>
-
 <template>
-  <Foo />
-  <Bar />
+  <div font-sans>
+    <Playground />
+  </div>
 </template>
+
+<style>
+html.dark {
+  background: #080808;
+  color: white;
+}
+</style>

@@ -1,24 +1,45 @@
 {
-	"name": "@mini-unocss/vite",
-	"version": "0.1.0",
-	"devDependencies": {
-		"@mini-unocss/core": "workspace:*"
-	},
-	"scripts": {
-		"build": "tsdown",
-		"dev": "tsdown -w"
-	},
-	"exports": {
-		".": {
-			"import": "./dist/index.mjs",
-			"types": "./dist/index.d.mts"
-		}
-	},
-	"main": "./dist/index.mjs",
-	"module": "./dist/index.mjs",
-	"types": "./dist/index.d.mts",
-	"files": ["dist"],
-	"peerDependencies": {
-		"vite": "^6.3.5"
-	}
+  "name": "@unocss/vite",
+  "version": "0.1.0-beta.2",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/antfu/unocss#readme",
+  "bugs": {
+    "url": "https://github.com/antfu/unocss/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antfu/unocss.git"
+  },
+  "funding": "https://github.com/sponsors/antfu",
+  "license": "MIT",
+  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch src",
+    "prepublishOnly": "nr build"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^4.1.1",
+    "@unocss/config": "workspace:*",
+    "@unocss/core": "workspace:*",
+    "@unocss/scope": "workspace:*",
+    "nanoevents": "^6.0.2"
+  },
+  "devDependencies": {
+    "vite": "^2.6.9"
+  }
 }

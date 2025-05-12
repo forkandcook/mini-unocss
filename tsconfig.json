@@ -1,13 +1,27 @@
 {
-	"compilerOptions": {
-		"target": "es2017",
-		"lib": ["esnext"],
-		"module": "esnext",
-		"moduleResolution": "node",
-		"resolveJsonModule": true,
-		"strict": true,
-		"strictNullChecks": true,
-		"esModuleInterop": true,
-		"skipDefaultLibCheck": true
-	}
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "esnext",
+    "lib": ["esnext"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "skipDefaultLibCheck": true,
+    "paths": {
+      "unocss": ["./packages/unocss/src/index.ts"],
+      "unocss/vite": ["./packages/unocss/src/vite.ts"],
+      "@unocss/core": ["./packages/core/src/index.ts"],
+      "@unocss/vite": ["./packages/vite/src/index.ts"],
+      "@unocss/config": ["./packages/config/src/index.ts"],
+      "@unocss/preset-uno": ["./packages/preset-uno/src/index.ts"],
+      "@unocss/preset-icons": ["./packages/preset-icons/src/index.ts"],
+      "@unocss/preset-attributify": ["./packages/preset-attributify/src/index.ts"],
+    }
+  },
+  "exclude": [
+    "**/dist/**",
+    "**/node_modules/**"
+  ]
 }
